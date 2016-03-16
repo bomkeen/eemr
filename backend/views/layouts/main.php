@@ -36,7 +36,7 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'Frontend', 'url' => Yii::$app->urlManagerFrontend->createUrl(['site/index'])],
+        ['label' => 'Frontend','url'=>\Yii::$app->urlManagerFrontend->baseUrl],
         ['label' => 'จัดการ User', 'url' => ['/user/admin/index']],
         ['label' => 'Log การเข้าใช้งาน', 'url' => ['/log']],
         ['label' => 'ระบบรายงาน', 'url' => ['#']],

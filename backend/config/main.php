@@ -29,6 +29,12 @@ return [
             'enablePrettyUrl' => false,
             'showScriptName' => true,
      ],
+        'urlManager' => [
+            'enablePrettyUrl' => FALSE,
+            'showScriptName' => false,
+            'rules' => [
+            ],
+        ],
      'urlManagerFrontend' => [
             'class' => 'yii\web\urlManager',
             'baseUrl' => '/eemr/frontend/web',

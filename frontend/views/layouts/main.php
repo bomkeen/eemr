@@ -39,9 +39,9 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'แบบใหม่', 'url' => ['/s']],
-        ['label' => 'backend', 'url' => Yii::$app->urlManagerBackend->createUrl(['site/index'])],
+        ['label' => 'backend', 'url'=>\Yii::$app->urlManagerBackend->baseUrl],
         ['label' => 'About This', 'url' => ['/site/about']],
-        //['label' => 'Contact', 'url' => ['/site/contact']],
+ 
         Yii::$app->user->isGuest ?
 ['label' => 'Sign in', 'url' => ['/user/security/login']] :
 ['label' => 'Account(' . Yii::$app->user->identity->username . ')', 'items'=>[
